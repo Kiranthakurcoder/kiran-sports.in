@@ -1,0 +1,421 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.logo{
+  color: palevioletred;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #111;
+  color: #fff;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+.nav-links a:hover {
+  color: #ff9800;
+}
+
+/* slider-sectiom */
+#slider-show{
+  margin-top: 16px;
+  
+}
+
+img{
+  background-size: cover;
+  background-position: center;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+  color: #fff;
+}
+.hero h2 {
+  font-size: 2.5em;
+}
+.cta-btn {
+  margin-top: 45px;
+  background-color: #ff9800;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+.cta-btn:hover {
+  background-color: #e68900;
+}
+
+/* Schedule Section */
+.schedule {
+  padding: 20px;
+  background-color: #fff;
+}
+.schedule h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+#match-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+#match-list li {
+  background-color: #eee;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 150px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #111;
+  color: #fff;
+}
+
+
+
+  /* Slider Container */
+.slider {
+  width: 800px;
+  height: 400px;
+  overflow: hidden;
+  margin: 20px auto;
+  position: relative;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Slides Container */
+.slides {
+  display: flex;
+  transition: transform 1s ease-in-out;
+}
+
+/* Single Slide */
+.slide {
+  width: 800px; /* Same as slider width */
+  flex-shrink: 0;
+}
+
+/* Images */
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Controls */
+button {
+  /* position: absolute; */
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 18px;
+  z-index: 10;
+}
+
+button.prev {
+  left: 10px;
+}
+
+button.next {
+  right: 10px;
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.poster{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 33px;
+  width: 50%; */
+}
+
+.poster1{
+  height: 412px;
+  width: 99%;
+  background-position: center;
+  background-size: cover;
+
+}
+
+.onee {
+
+  height: 440px;
+  width:52%;
+  background-position: center;
+  background-size: cover;
+  
+
+  
+
+}
+
+.live{
+   height: 48px;
+  width:100%;
+  background-color:transparent;
+  opacity: 0.8;
+  color: #f00b0b;
+  border: 2px solid black;
+
+
+  height: 48px;
+  width: 31%;
+  background-color: transparent;
+  /* text-align: center; */
+  /* line-height: 48px;  */
+  color: #f00b0b;
+  font-weight: bold;
+  /* font-size: 20px; */
+  text-transform: uppercase;
+  animation: blink 2s infinite; 
+
+
+  /* new */
+
+  
+
+background-color: rgba(0, 0, 0, 0.5); 
+color: #f00b0b;
+padding: 10px 10px; 
+border-radius: 5px; 
+font-size: 18px;
+font-weight: bold;
+text-transform: uppercase;
+animation: blink 1s infinite; 
+}
+
+@keyframes blink {
+  0%, 100% {
+      opacity: 1; 
+  }
+  50% {
+      opacity: 0; 
+  }
+}
+
+
+
+
+/* Slider Container */
+.image-slider {
+position: relative;
+max-width: 800px;
+margin: auto;
+overflow: hidden;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Individual Slide */
+.slide {
+display: none;
+text-align: center;
+}
+
+.slide.active {
+display: block;
+animation: fade 1s ease-in-out;
+}
+
+.slide img {
+width: 100%;
+height: auto;
+border-radius: 10px;
+}
+
+/* Dots Container */
+.dots {
+text-align: center;
+margin-top: 10px;
+}
+
+.dots .dot {
+height: 12px;
+width: 12px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+margin: 0 5px;
+cursor: pointer;
+}
+
+.dots .dot.active {
+background-color: #555;
+}
+
+/* Fade Animation */
+@keyframes fade {
+from {
+  opacity: 0.5;
+}
+to {
+  opacity: 1;
+}
+}
+
+
+.slide img {
+width: 100%; /* Full width of the slider */
+height: 300px; /* Set a fixed height for the images */
+object-fit: cover; /* Crop or adjust image to fit the container */
+}
+
+
+.image-slider {
+position: relative;
+max-width: 800px;
+height: 300px; /* Fix the height of the entire slider */
+margin: auto;
+overflow: hidden;
+border-radius: 10px;
+}
+
+.slide img {
+width: 100%;
+height: 300px; /* Set a consistent height */
+object-fit: cover; /* Ensure the image fits properly without stretching */
+}
+
+.dots {
+text-align: center;
+margin-top: 10px;
+}
+
+.dots .dot {
+height: 12px;
+width: 12px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+margin: 0 5px;
+cursor: pointer;
+}
+
+.dots .dot.active {
+background-color: #555;
+}
+
+
+/* styles.css */
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+background-color: #f4f4f4;
+}
+
+.live-matches-container {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 20px;
+padding: 20px;
+}
+
+.match {
+background: #ffffff;
+border: 1px solid #ddd;
+border-radius: 8px;
+width: 250px;
+padding: 15px;
+text-align: center;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+transition: transform 0.2s ease;
+}
+
+.match:hover {
+transform: scale(1.05);
+}
+
+.match h3 {
+margin: 0 0 10px;
+color: #333;
+/* color: white; */
+}
+
+.match p {
+margin: 0;
+color: #555;
+/* color:#FFA5AB; */
+font-size: 14px;
+}
+
+
+.match {
+text-decoration: none; /* Removes underline */
+color: inherit;        /* Inherits text color */
+display: block;        /* Makes <a> behave like a block element */
+/* background-color:#FFA5AB; */
+
+color: #bbb;
+}
+
+
+
+.no-underline {
+text-decoration: none;
+}
+
+
+.main-sections {
+  background-color: #f1f1f1;  /* Footer background color */
+  padding: 20px;  /* Padding for space */
+  text-align: center;  /* Center the text */
+}
+
+.footer-message {
+  font-size: 16px;  /* Text size */
+  color: #333;  /* Text color */
+  margin: 5px 0;  /* Margin for spacing */
+}
+
+

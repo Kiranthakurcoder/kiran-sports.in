@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SportsHub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Kiran Thakur</h1>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <!-- <li><a href="#teams">Teams</a></li> -->
+        <li><a href="#live">Live</a></li>
+        <!-- <li><a href="#highlights">Highlights</a></li> -->
+      </ul>
+    </nav>
+  </header>
+
+  <div id="slider-show">
+   
+    <div class="image-slider">
+      <!-- Slide 1 -->
+      <div class="slide active">
+        <a href="https://criccoder264.pages.dev/Tnt2"  class="no-underline" target="_blank">
+          <div class="onee" style="background-image: url(photo1.jpg);">
+            <h1 class="live">Live-Eng</h1>
+          </div>
+        </a>
+      </div>
+    
+      <!-- Slide 2 -->
+      <div class="slide">
+        <a href="https://cricsterspkl.io/p2/?id=sshindiwv"  class="no-underline" >
+          <div class="onee" style="background-image: url(photo1.jpg);">
+            <h1 class="live">Live-Hindi</h1>
+          </div>
+        </a>
+      </div>
+    
+      <!-- Slide 3 -->
+      <div class="slide">
+        <a href="https://criccoder264.pages.dev/Willow"  class="no-underline" target="_blank">
+          <div class="onee" style="background-image: url(photo1.jpg);">
+            <h1 class="live">Live-Eng</h1>
+          </div>
+        </a>
+      </div>
+    
+      <!-- Slide 4 -->
+      <div class="slide">
+        <a href="https://shz.al/wYiP.html" class="no-underline" >
+          <div class="onee" style="background-image: url(photo1.jpg);">
+            <h1 class="live">Live-Eng</h1>
+          </div>
+        </a>
+      </div>
+    </div>
+    
+  </div>
+  
+  
+    <!-- Dots Navigation -->
+    <div class="dots">
+      <span class="dot active" onclick="setSlide(0)"></span>
+      <span class="dot" onclick="setSlide(1)"></span>
+      <span class="dot" onclick="setSlide(2)"></span>
+      <span class="dot" onclick="setSlide(3)"></span>
+    </div>
+  </div>
+
+
+
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <h2>Welcome to <h2 style="color: palevioletred;">Kiran Sports</h2></h2>
+    <p>Your one-stop destination for live sports updates!</p>
+    <button class="cta-btn" onclick="showLive()">Watch Live</button>
+    <hr>
+   
+
+    <div class="live-matches-container">
+      <!-- Match 1 -->
+      <a href="https://criccoder264.pages.dev/Tnt2
+      " target="_blank" class="match">
+        <h3>IND vs AUS</h3>
+        <p>TNT Sports - ENG</p>
+      </a>
+      <!-- Match 2 -->
+      <a href="https://shz.al/wYiP.html" target="_blank" class="match">
+        <h3>IND vs AUA</h3>
+        <p>Austro Cricket - ENG</p>
+      </a>
+      <!-- Match 3 -->
+      <a href="https://criccoder264.pages.dev/Willow" target="_blank" class="match">
+        <h3>IND vs AUS</h3>
+        <p>Willow - ENG</p>
+      </a>
+      <!-- Match 4 -->
+      <a href="https://cricsterspkl.io/p2/?id=sshindiwv" target="_blank" class="match">
+        <h3>IND vs AUS</h3>
+        <p>Star Sports - HINDI</p>
+      </a>
+    </div>
+    
+
+
+  </section>
+
+  <!-- Schedule Section -->
+  <section class="schedule" id="schedule">
+    <div class="poster">
+      <div class="poster1" style="background-image: url(photo1.jpg);">img</div>
+      
+    </div>
+    <h2>Upcoming Matches</h2>
+    <ul id="match-list">
+      <!-- Matches will be added dynamically using JS -->
+    </ul>
+  </section>
+
+  <!-- Footer -->
+
+  <div class="main-sections">
+    
+      <p class="footer-message">
+        कभी-कभी स्टार स्पोर्ट्स हिंदी नहीं चलेगा। कृपया बार-बार प्रयास करते रहें।
+      </p>
+      <p class="footer-message">
+        Sometimes Star Sports Hindi might not work. Please keep trying again and again.
+      </p>
+      <p class="footer-message">
+        कधी कधी स्टार स्पोर्ट्स हिंदी काम करत नाही. कृपया बारं बार प्रयत्न करत राहा.
+      </p>
+    
+    
+    
+  </div>
+  <footer>
+    <p>© 2024 Kran Thakur. All rights reserved.</p>
+  </footer>
+
+  <script src="apps.js"></script>
+</body>
+</html>
