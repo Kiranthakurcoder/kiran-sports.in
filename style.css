@@ -9,7 +9,8 @@
 body {
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
-  background-color: #f5f5f5;
+  /* background-color: #f5f5f5; */
+  background-color: white;
   color: #333;
 }
 
@@ -18,14 +19,35 @@ body {
 }
 
 /* Navbar */
-.navbar {
+/* .navbar {
+  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
   background-color: #111;
   color: #fff;
+} */
+
+nav {
+  position: fixed; /* Navbar ko viewport ke upar fix karna */
+  top: 0; /* Top pe align karna */
+  left: 0; /* Left side pe align karna */
+  width: 100%; /* Pure viewport ki width lene ke liye */
+  display: flex; /* Flexbox layout */
+  justify-content: space-between; /* Content ko evenly spread karna */
+  align-items: center; /* Vertical alignment center karna */
+  padding: 10px 20px; /* Inner spacing */
+  /* background-color: #111; Navbar ka background color */
+  /* background-color: #CCCCFF; Navbar ka background color */
+  background-color: black;
+  color: #fff; /* Text ka color */
+  box-sizing: border-box; /* Padding aur border ko include karna */
+  z-index: 1000; /* Navbar ko sabse upar rakhna */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.9);
+
 }
+
 .nav-links {
   list-style: none;
   display: flex;
@@ -54,9 +76,11 @@ img{
 
 /* Hero Section */
 .hero {
+  margin-top: 69px;
   text-align: center;
   padding: 50px 20px;
-  background: linear-gradient(to right, #1e3c72, #2a5298);
+  /* background: linear-gradient(to right, #1e3c72, #2a5298); */
+  
   color: #fff;
 }
 .hero h2 {
@@ -363,9 +387,11 @@ padding: 20px;
 
 .match {
 background: #ffffff;
+
 border: 1px solid #ddd;
 border-radius: 8px;
-width: 250px;
+/* width: 250px; */
+width: 156px;
 padding: 15px;
 text-align: center;
 box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -418,4 +444,54 @@ text-decoration: none;
   margin: 5px 0;  /* Margin for spacing */
 }
 
+.pnjs{
+/* background-image: url(sky.png); */
+background-size: cover;
+background-position: center;
+/* border: 1px solid #ddd; */
+border-radius: 8px;
+width: 250px;
+padding: 54px;
+background-color: transparent;
 
+}
+
+.btween{
+  margin: 22px;
+  font-size:23px;
+}
+
+
+
+
+
+.loader {
+  border: 8px solid rgb(220, 8, 8); /* Light grey background */
+  border-top: 8px solid blue; /* Blue color for the spinning section */
+  border-radius: 50%; /* Makes the element circular */
+  width: 50px; /* Size of the circle */
+  height: 50px; /* Size of the circle */
+  animation: spin 1.5s linear infinite; /* Animation for continuous spinning */
+}
+
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+.kt{
+  background-color: #111;
+  color:orange;
+  padding: 34px;
+  text-align: center;
+}
+
+button{
+  margin-top: 34px;
+}
+
+.white{
+  color: #ffff;
+}
